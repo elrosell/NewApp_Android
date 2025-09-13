@@ -54,21 +54,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Toast.makeText(this, "agregado", Toast.LENGTH_SHORT).show();
         }
         else
-            if (cadenita.equals("Pagar")){
-                aRegreso = aobjetito.regresar();
+            if (cadenita.equals("Pagar")){                aRegreso = aobjetito.regresar();
                 int apagar = 0;
                 String cadenota = "";
                 Toast.makeText(this, "Tiene: " + aRegreso.size()
                         , Toast.LENGTH_SHORT).show();
                 int cuantos = aRegreso.size();
                 for (int i = 0; i < cuantos; ++i){
-                    cadenota = cadenota + aRegreso.get(i).getTipo() + "\t\t" +
-                            aRegreso.get(i).getDuracion() + "\t\t" +
-                            aRegreso.get(i).getCosto() + "\n";
+                    cadenota = cadenota + "Tipo: " + aRegreso.get(i).getTipo() + "\t\t" +
+                            "Duración: " + aRegreso.get(i).getDuracion() + "\t\t" +
+                            "Costo: " + aRegreso.get(i).getCosto() + "\n";
                     apagar = apagar + aRegreso.get(i).getCosto();
                 }
                 cadenota = cadenota + "\n" + "gran total: " + apagar;
                 vistitita.setText(cadenota);
+
             }
         if (cadenita.equals("Nacional")){
             Clasesita objetito = new Clasesita();
@@ -87,9 +87,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         , Toast.LENGTH_SHORT).show();
                 int cuantos = aRegreso.size();
                 for (int i = 0; i < cuantos; ++i){
-                    cadenota = cadenota + aRegreso.get(i).getTipo() + "\t\t" +
-                            aRegreso.get(i).getDuracion() + "\t\t" +
-                            aRegreso.get(i).getCosto() + "\n";
+                    cadenota = cadenota + "Tipo: " + aRegreso.get(i).getTipo() + "\t\t" +
+                            "Duración: " + aRegreso.get(i).getDuracion() + "\t\t" +
+                            "Costo: " + aRegreso.get(i).getCosto() + "\n";
                     apagar = apagar + aRegreso.get(i).getCosto();
                 }
                 cadenota = cadenota + "\n" + "gran total: " + apagar;
@@ -112,9 +112,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         , Toast.LENGTH_SHORT).show();
                 int cuantos = aRegreso.size();
                 for (int i = 0; i < cuantos; ++i){
-                    cadenota = cadenota + aRegreso.get(i).getTipo() + "\t\t" +
-                            aRegreso.get(i).getDuracion() + "\t\t" +
-                            aRegreso.get(i).getCosto() + "\n";
+                    cadenota = cadenota + "Tipo: " + aRegreso.get(i).getTipo() + "\t\t" +
+                            "Duración: " + aRegreso.get(i).getDuracion() + "\t\t" +
+                            "Costo: " + aRegreso.get(i).getCosto() + "\n";
                     apagar = apagar + aRegreso.get(i).getCosto();
                 }
                 cadenota = cadenota + "\n" + "gran total: " + apagar;
